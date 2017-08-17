@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41E2BF631F40FAE4007D58E5"
-               BuildableName = "Wrapper.framework"
-               BlueprintName = "Wrapper"
-               ReferencedContainer = "container:Wrapper.xcodeproj">
+               BlueprintIdentifier = "41EE65471F45990800930274"
+               BuildableName = "DynamicOoyalaWrapper.framework"
+               BlueprintName = "DynamicOoyalaWrapper"
+               ReferencedContainer = "container:DynamicOoyalaWrapper.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41E2BF631F40FAE4007D58E5"
-            BuildableName = "Wrapper.framework"
-            BlueprintName = "Wrapper"
-            ReferencedContainer = "container:Wrapper.xcodeproj">
+            BlueprintIdentifier = "41EE65471F45990800930274"
+            BuildableName = "DynamicOoyalaWrapper.framework"
+            BlueprintName = "DynamicOoyalaWrapper"
+            ReferencedContainer = "container:DynamicOoyalaWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41E2BF631F40FAE4007D58E5"
-            BuildableName = "Wrapper.framework"
-            BlueprintName = "Wrapper"
-            ReferencedContainer = "container:Wrapper.xcodeproj">
+            BlueprintIdentifier = "41EE65471F45990800930274"
+            BuildableName = "DynamicOoyalaWrapper.framework"
+            BlueprintName = "DynamicOoyalaWrapper"
+            ReferencedContainer = "container:DynamicOoyalaWrapper.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

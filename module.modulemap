@@ -1,4 +1,4 @@
-framework module Wrapper {
+framework module DynamicOoyalaWrapper {
     header "iOS7ScrubberSliderFraming.h"
     header "OOAdOverlayInfo.h"
     header "OOAdPlugin.h"
