@@ -20,7 +20,6 @@
 		41D823941FD7EB16000696C1 /* OOTimeSliderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D823921FD7EB16000696C1 /* OOTimeSliderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41D823971FD7EB51000696C1 /* OOVolumeSliderProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D823951FD7EB51000696C1 /* OOVolumeSliderProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41D823981FD7EB51000696C1 /* OOVolumeSliderDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 41D823961FD7EB51000696C1 /* OOVolumeSliderDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		41EE65661F4599F200930274 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE65561F4599F200930274 /* AVFoundation.framework */; };
 		41EE65671F4599F200930274 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE65571F4599F200930274 /* AVKit.framework */; };
 		41EE65681F4599F200930274 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE65581F4599F200930274 /* CFNetwork.framework */; };
 		41EE65691F4599F200930274 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE65591F4599F200930274 /* CoreGraphics.framework */; };
@@ -165,6 +164,7 @@
 		41EE66761F459A7A00930274 /* OOVideoGravityButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EE65F61F459A7A00930274 /* OOVideoGravityButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41EE66771F459A7A00930274 /* OOVolumeButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EE65F71F459A7A00930274 /* OOVolumeButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		41EE66781F459A7A00930274 /* OoyalaSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 41EE65F81F459A7A00930274 /* OoyalaSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		41F2272D20501A2D00DB9FF3 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41EE65561F4599F200930274 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -336,8 +336,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F2272D20501A2D00DB9FF3 /* AVFoundation.framework in Frameworks */,
 				41EE65771F459A0000930274 /* JavaScriptCore.framework in Frameworks */,
-				41EE65661F4599F200930274 /* AVFoundation.framework in Frameworks */,
 				418167A51FD7C82400B54849 /* OoyalaSDK.framework in Frameworks */,
 				41EE65671F4599F200930274 /* AVKit.framework in Frameworks */,
 				41EE65681F4599F200930274 /* CFNetwork.framework in Frameworks */,
@@ -902,7 +902,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/module.modulemap";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-weak_framework",
+					AVFoundation,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arbisoft.DynamicOoyalaWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -927,7 +931,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "$(PROJECT_DIR)/module.modulemap";
-				OTHER_LDFLAGS = "-all_load";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-weak_framework",
+					AVFoundation,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.arbisoft.DynamicOoyalaWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
